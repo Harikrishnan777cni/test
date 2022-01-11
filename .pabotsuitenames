@@ -1,0 +1,24 @@
+datasources:65f772ce59ae4c6e43f2ac6fe1c517d54846320a
+commandlineoptions:a169070b2513e0165b7dcfa5a7024ddb7d98a597
+suitesfrom:no-suites-from-option
+file:27f04c5c1d8161b59a14a302f9699192b23256fc
+--suite TestCases.Assetnavigationtests.Differentmarketpublicassetnavigationtest
+--suite TestCases.Assetnavigationtests.Publicassetnavigationtest
+--suite TestCases.Assetnavigationtests.Publicationnavigation
+--suite TestCases.Assetnavigationtests.Sharedwipassetnavigation
+--suite TestCases.Contentcreatorcontract.Contentcreatorcontract
+--suite TestCases.Folderscreationtests.Featurefoldercreationtest
+--suite TestCases.Folderscreationtests.Uploadfoldercreationtest
+--suite TestCases.Lightboxcreationtests.Syndicationlightbox
+--suite TestCases.Login.LoginDDT-CSV
+--suite TestCases.Login.Logintest
+--suite TestCases.Searchtests.Advancedsearch
+--suite TestCases.Searchtests.Basicsearch
+--suite TestCases.Searchtests.Extendedsearch
+--suite TestCases.Searchtests.Fashionshowsearch
+--suite TestCases.Searchtests.Publicationsearch
+--suite TestCases.Searchtests.TouchUIsearch
+--suite TestCases.Syndicationconsoletests.SyndicationAfterPublicationreqbymetest
+--suite TestCases.Syndicationconsoletests.SyndicationAfterPublicationreqofmetest
+--suite TestCases.Syndicationconsoletests.SyndicationBeforePublicationreqbymetest
+--suite TestCases.Syndicationconsoletests.SyndicationBeforePublicationreqofmetest

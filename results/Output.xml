@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Rebot 4.0.3 (Python 3.9.5 on darwin)" generated="20210610 10:36:30.406" rpa="false" schemaversion="2">
+<suite id="s1" name="Basicsearch" source="/Users/hsreekum/PycharmProjects/DAMrobotAutomationframeworkone/TestCases/Searchtests/Basicsearch.robot">
+<test id="s1-t1" name="Basicsearchtest using harikrishnan.sreekumaran@condenast.com and Mondaytuesday2021!">
+<kw name="Start TestCase" library="CommonFunctionality" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://google.com</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210610 10:35:43.422" level="INFO">Opening browser 'chrome' to base url 'https://google.com'.</msg>
+<status status="PASS" starttime="20210610 10:35:43.421" endtime="20210610 10:35:47.764"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210610 10:35:47.765" endtime="20210610 10:35:47.877"/>
+</kw>
+<status status="PASS" starttime="20210610 10:35:43.421" endtime="20210610 10:35:47.877"/>
+</kw>
+<kw name="Basicsearchtest">
+<arg>https://emea-staging.cnidam.com</arg>
+<arg>harikrishnan.sreekumaran@condenast.com</arg>
+<arg>Mondaytuesday2021!</arg>
+<arg>globaladmin</arg>
+<arg>boutonniere</arg>
+<arg>bike</arg>
+<tag>Smoke</tag>
+<kw name="Open my url" library="LoginKeywords">
+<arg>${SiteUrl}</arg>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${SiteUrl}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20210610 10:35:47.879" level="INFO">Opening url 'https://emea-staging.cnidam.com'</msg>
+<status status="PASS" starttime="20210610 10:35:47.879" endtime="20210610 10:36:18.919"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210610 10:36:18.920" endtime="20210610 10:36:19.064"/>
+</kw>
+<status status="PASS" starttime="20210610 10:35:47.878" endtime="20210610 10:36:19.064"/>
+</kw>
+<kw name="Enter UserName" library="LoginKeywords">
+<arg>${username}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${txt_loginUserName_lctr}</arg>
+<arg>timeout=30s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210610 10:36:29.994" level="FAIL">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=91.0.4472.101)
+</msg>
+<status status="FAIL" starttime="20210610 10:36:29.978" endtime="20210610 10:36:29.994"/>
+</kw>
+<msg timestamp="20210610 10:36:29.994" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+  (Session info: chrome=91.0.4472.101)
+</msg>
+<msg timestamp="20210610 10:36:30.015" level="FAIL">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=91.0.4472.101)
+</msg>
+<status status="FAIL" starttime="20210610 10:36:19.065" endtime="20210610 10:36:30.015"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_loginUserName_lctr}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20210610 10:36:30.015" endtime="20210610 10:36:30.015"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${submitbutton_lctr}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20210610 10:36:30.015" endtime="20210610 10:36:30.015"/>
+</kw>
+<status status="FAIL" starttime="20210610 10:36:19.064" endtime="20210610 10:36:30.015"/>
+</kw>
+<kw name="Enter Password" library="LoginKeywords">
+<arg>${password}</arg>
+<status status="NOT RUN" starttime="20210610 10:36:30.015" endtime="20210610 10:36:30.016"/>
+</kw>
+<kw name="Click Verify" library="LoginKeywords">
+<status status="NOT RUN" starttime="20210610 10:36:30.016" endtime="20210610 10:36:30.016"/>
+</kw>
+<kw name="Check welcomemessage" library="LoginKeywords">
+<arg>${username}</arg>
+<status status="NOT RUN" starttime="20210610 10:36:30.016" endtime="20210610 10:36:30.016"/>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<var>${act_title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="NOT RUN" starttime="20210610 10:36:30.016" endtime="20210610 10:36:30.016"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${act_title}' == '${expectedpagetitle_emea}' and '${SiteUrl}' == '${expectedsiteurl_emea}' or '${act_title}' == '${expectedpagetitle_apac}' and '${SiteUrl}' == '${expectedsiteurl_apac}'</arg>
+<arg>Verify successful login</arg>
+<arg>ELSE</arg>
+<arg>Verify unsuccessful login</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="NOT RUN" starttime="20210610 10:36:30.016" endtime="20210610 10:36:30.016"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${userrole}' == 'piced' or '${userrole}' == 'ebt'</arg>
+<arg>Welcomepagetabscheck_ebtorpiced</arg>
+<arg>ELSE</arg>
+<arg>Welcomepagetabscheck_globaladmin</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="NOT RUN" starttime="20210610 10:36:30.017" endtime="20210610 10:36:30.017"/>
+</kw>
+<kw name="Go to images page" library="BasicsearchKeywords">
+<status status="NOT RUN" starttime="20210610 10:36:30.017" endtime="20210610 10:36:30.017"/>
+</kw>
+<kw name="Go to search tab" library="BasicsearchKeywords">
+<status status="NOT RUN" starttime="20210610 10:36:30.017" endtime="20210610 10:36:30.017"/>
+</kw>
+<kw name="Enter search text" library="BasicsearchKeywords">
+<arg>${searchinput1}</arg>
+<status status="NOT RUN" starttime="20210610 10:36:30.017" endtime="20210610 10:36:30.017"/>
+</kw>
+<kw name="Click search button" library="BasicsearchKeywords">
+<status status="NOT RUN" starttime="20210610 10:36:30.017" endtime="20210610 10:36:30.017"/>
+</kw>
+<kw name="Click pleaseaddfilterokbutton and retry search" library="BasicsearchKeywords">
+<status status="NOT RUN" starttime="20210610 10:36:30.017" endtime="20210610 10:36:30.017"/>
+</kw>
+<kw name="Check if any result is getting fetched" library="BasicsearchKeywords">
+<var>${count}</var>
+<status status="NOT RUN" starttime="20210610 10:36:30.018" endtime="20210610 10:36:30.018"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<var>${verificationstatus}</var>
+<arg>${count} &gt; 0</arg>
+<arg>Run Keyword And Return Status</arg>
+<arg>Verify successful search</arg>
+<arg>${searchinput1}</arg>
+<arg>ELSE</arg>
+<arg>FAIL</arg>
+<arg>No search results.Please try again</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="NOT RUN" starttime="20210610 10:36:30.018" endtime="20210610 10:36:30.018"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${verificationstatus}' == 'False'</arg>
+<arg>DoubleclickandcheckkeywordinADP</arg>
+<arg>${searchinput1}</arg>
+<arg>ELSE</arg>
+<arg>Log</arg>
+<arg>Exactmatchfound</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="NOT RUN" starttime="20210610 10:36:30.018" endtime="20210610 10:36:30.018"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${verificationstatus}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20210610 10:36:30.018" endtime="20210610 10:36:30.018"/>
+</kw>
+<kw name="Click clear button" library="BasicsearchKeywords">
+<status status="NOT RUN" starttime="20210610 10:36:30.018" endtime="20210610 10:36:30.018"/>
+</kw>
+<kw name="Enter search text" library="BasicsearchKeywords">
+<arg>${searchinput2}</arg>
+<status status="NOT RUN" starttime="20210610 10:36:30.019" endtime="20210610 10:36:30.019"/>
+</kw>
+<kw name="Check autosuggestion" library="BasicsearchKeywords">
+<arg>${searchinput2}</arg>
+<status status="NOT RUN" starttime="20210610 10:36:30.019" endtime="20210610 10:36:30.019"/>
+</kw>
+<status status="FAIL" starttime="20210610 10:35:47.878" endtime="20210610 10:36:30.019"/>
+</kw>
+<kw name="Finish TestCase" library="CommonFunctionality" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20210610 10:36:30.023" endtime="20210610 10:36:30.106"/>
+</kw>
+<status status="PASS" starttime="20210610 10:36:30.022" endtime="20210610 10:36:30.106"/>
+</kw>
+<status status="FAIL" starttime="20210610 10:35:43.421" endtime="20210610 10:36:30.106">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=91.0.4472.101)
+</status>
+</test>
+<doc>[https://pabot.org/?ref=log|Pabot] result from 1 executions.</doc>
+<status status="FAIL" starttime="20210610 10:35:43.214" endtime="20210610 10:36:30.108"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Basicsearch">Basicsearch</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20210610 10:36:29.994" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+  (Session info: chrome=91.0.4472.101)
+</msg>
+</errors>
+</robot>

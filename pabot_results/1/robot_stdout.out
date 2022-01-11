@@ -1,0 +1,20 @@
+==============================================================================
+TestCases                                                                     
+==============================================================================
+TestCases.Assetnavigationtests                                                
+==============================================================================
+TestCases.Assetnavigationtests.Publicassetnavigationtest                      
+==============================================================================
+Publicassetnavigationtest                                             | FAIL |
+Execution terminated by signal
+------------------------------------------------------------------------------
+TestCases.Assetnavigationtests.Publicassetnavigationtest              | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+TestCases.Assetnavigationtests                                        | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+TestCases                                                             | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  /Users/hsreekum/PycharmProjects/DAMrobotAutomationframeworkone/pabot_results/1/output.xml

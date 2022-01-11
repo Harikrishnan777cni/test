@@ -1,0 +1,5 @@
+Second signal will force exit.
+[ WARN ] Keyword 'Capture Page Screenshot' could not be run on failure: Execution terminated by signal
+[ WARN ] Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1045af730>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/e506ead23fc3bf5d7db8f53a75b0ac54
+[ WARN ] Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1045af460>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/e506ead23fc3bf5d7db8f53a75b0ac54
+[ WARN ] Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x104598ee0>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/e506ead23fc3bf5d7db8f53a75b0ac54

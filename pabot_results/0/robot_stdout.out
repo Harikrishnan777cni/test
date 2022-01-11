@@ -1,0 +1,20 @@
+==============================================================================
+TestCases                                                                     
+==============================================================================
+TestCases.Assetnavigationtests                                                
+==============================================================================
+TestCases.Assetnavigationtests.Differentmarketpublicassetnavigationtest       
+==============================================================================
+DifferentmarketPublicassetnavigationtest using tw-gq-ebt2@condenas... | FAIL |
+Execution terminated by signal
+------------------------------------------------------------------------------
+TestCases.Assetnavigationtests.Differentmarketpublicassetnavigatio... | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+TestCases.Assetnavigationtests                                        | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+TestCases                                                             | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  /Users/hsreekum/PycharmProjects/DAMrobotAutomationframeworkone/pabot_results/0/output.xml
